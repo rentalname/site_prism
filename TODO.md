@@ -4,14 +4,9 @@
 -  Fix `page_section_steps.rb` - Triple expectations
 -  Generic Features are sometimes hard to understand. Look to rework the Gherkin
 -  `page_element_interaction_steps.rb:49` Shouldn't be there as its performing Actions
--  Now Capybara is 2.6+
-    - capybara 2.5 was the first Capybara to introduce `default_max_wait_time`
-    - We can massively simplify `./lib/site_prism/waiter.rb`
-    - This will basically make the entire class a 2/3liner
 -  `site_prism/addressable_url_matcher.rb` - Needs more of a spring clean
 -  `SitePrism::Page#wait_until_displayed` - Re-call existing method and re-raise
 -  Begin to refactor `displayed?(*args)`, to remove enumerable args (Shouldn't be enumerable)
--  iFrame helper methods - Potential bug to fix (Issue #66)
 -  New feature `SitePrism::Section#native` returning `root_element.native` To help with
 people wanting to access the base native object (Honouring what maintainers said)
 -  Exceptions Spec needs writing
